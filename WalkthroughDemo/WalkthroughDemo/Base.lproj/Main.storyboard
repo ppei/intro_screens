@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="WalkthroughDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSH-un-oaK">
+                                <rect key="frame" x="96" y="160" width="129" height="30"/>
+                                <state key="normal" title="Show Walkthrough">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="bSH-un-oaK" secondAttribute="centerX" constant="-0.5" id="NqG-Xw-iqI"/>
+                            <constraint firstAttribute="centerY" secondItem="bSH-un-oaK" secondAttribute="centerY" constant="65.5" id="lVR-Tq-nAk"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="338"/>
+        </scene>
+        <!--Walkthrough View Controller-->
+        <scene sceneID="YJw-0B-qgJ">
+            <objects>
+                <viewController storyboardIdentifier="walk0" id="WOC-z7-Jij" customClass="BWWalkthroughViewController" customModule="WalkthroughDemo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yYb-SF-YOL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xmz-fu-28k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="haA-02-37x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbK-iq-L93">
+                                <rect key="frame" x="28" y="401" width="57" height="30"/>
+                                <state key="normal" title="Sign-Up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YR3-st-f9G">
+                                <rect key="frame" x="140" y="401" width="40" height="30"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0b-u8-iCg">
+                                <rect key="frame" x="254" y="401" width="50" height="30"/>
+                                <state key="normal" title="Sign-In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdC-RP-aMr">
+                                <rect key="frame" x="141" y="59" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="YR3-st-f9G" secondAttribute="centerX" id="6R7-Is-LUP"/>
+                            <constraint firstItem="VdC-RP-aMr" firstAttribute="top" secondItem="yYb-SF-YOL" secondAttribute="bottom" constant="39" id="A8V-kX-bVa"/>
+                            <constraint firstItem="Xmz-fu-28k" firstAttribute="top" secondItem="hbK-iq-L93" secondAttribute="bottom" constant="49" id="OLr-6t-dZe"/>
+                            <constraint firstItem="Xmz-fu-28k" firstAttribute="top" secondItem="YR3-st-f9G" secondAttribute="bottom" constant="49" id="a0p-ay-E1O"/>
+                            <constraint firstItem="hbK-iq-L93" firstAttribute="leading" secondItem="haA-02-37x" secondAttribute="leadingMargin" constant="12" id="cpf-XE-xCN"/>
+                            <constraint firstItem="G0b-u8-iCg" firstAttribute="trailing" secondItem="haA-02-37x" secondAttribute="trailingMargin" id="sqp-C3-acY"/>
+                            <constraint firstAttribute="centerX" secondItem="VdC-RP-aMr" secondAttribute="centerX" id="xn9-BZ-ppS"/>
+                            <constraint firstItem="Xmz-fu-28k" firstAttribute="top" secondItem="G0b-u8-iCg" secondAttribute="bottom" constant="49" id="xnP-Sl-kiS"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9f-Ds-553" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="338"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="yOs-l2-vnW">
+            <objects>
+                <viewController storyboardIdentifier="walk3" id="fXO-q1-0OB" customClass="BWWalkthroughPageViewController" customModule="WalkthroughDemo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ygd-Cc-2dm"/>
+                        <viewControllerLayoutGuide type="bottom" id="agG-nV-0VE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LHt-14-dmG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ge0-UK-oO0">
+                                <rect key="frame" x="16" y="20" width="288" height="460"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhO-nR-B7a">
+                                <rect key="frame" x="136" y="161" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ge0-UK-oO0" firstAttribute="top" secondItem="Ygd-Cc-2dm" secondAttribute="bottom" id="0VF-fX-Qfv"/>
+                            <constraint firstItem="ge0-UK-oO0" firstAttribute="leading" secondItem="LHt-14-dmG" secondAttribute="leadingMargin" id="0hb-0U-BaS"/>
+                            <constraint firstAttribute="centerX" secondItem="uhO-nR-B7a" secondAttribute="centerX" id="Ycy-0f-bp3"/>
+                            <constraint firstItem="agG-nV-0VE" firstAttribute="top" secondItem="ge0-UK-oO0" secondAttribute="bottom" id="dOa-2i-msa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ge0-UK-oO0" secondAttribute="trailing" id="hm3-ku-w9G"/>
+                            <constraint firstAttribute="centerY" secondItem="uhO-nR-B7a" secondAttribute="centerY" constant="68.5" id="xDD-g0-RkP"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTC-u7-tpK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515" y="338"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="Q2R-cg-R9p">
+            <objects>
+                <viewController storyboardIdentifier="walk2" id="Ceq-2f-w3U" customClass="BWWalkthroughPageViewController" customModule="WalkthroughDemo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aKb-FL-lub"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q1e-ss-VnZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rYp-M6-Btq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Page2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6c-VO-Y2s">
+                                <rect key="frame" x="110" y="159" width="112" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2WQ-La-IrL">
+                                <rect key="frame" x="16" y="20" width="288" height="460"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="2WQ-La-IrL" secondAttribute="trailing" id="3RM-mK-pYc"/>
+                            <constraint firstItem="Q1e-ss-VnZ" firstAttribute="top" secondItem="2WQ-La-IrL" secondAttribute="bottom" id="RQc-7M-XxX"/>
+                            <constraint firstItem="2WQ-La-IrL" firstAttribute="leading" secondItem="rYp-M6-Btq" secondAttribute="leadingMargin" id="Tro-j1-fJE"/>
+                            <constraint firstItem="2WQ-La-IrL" firstAttribute="top" secondItem="aKb-FL-lub" secondAttribute="bottom" id="cNe-Ge-n7U"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyr-xF-rRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="338"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="01B-qW-YkW">
+            <objects>
+                <viewController storyboardIdentifier="walk1" id="neM-Ob-qyl" customClass="BWWalkthroughPageViewController" customModule="WalkthroughDemo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Byj-pF-nDp"/>
+                        <viewControllerLayoutGuide type="bottom" id="okr-hX-3cI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Oi-a4-2iw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DZ0-yg-rSa">
+                                <rect key="frame" x="16" y="20" width="288" height="460"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lND-9f-btu">
+                                <rect key="frame" x="127" y="167" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DZ0-yg-rSa" firstAttribute="leading" secondItem="6Oi-a4-2iw" secondAttribute="leadingMargin" id="8Xh-6f-Nm9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DZ0-yg-rSa" secondAttribute="trailing" id="IId-cC-PBx"/>
+                            <constraint firstItem="DZ0-yg-rSa" firstAttribute="top" secondItem="Byj-pF-nDp" secondAttribute="bottom" id="KVJ-Ib-pew"/>
+                            <constraint firstAttribute="centerY" secondItem="lND-9f-btu" secondAttribute="centerY" constant="62.5" id="Ke9-tg-CeA"/>
+                            <constraint firstAttribute="centerX" secondItem="lND-9f-btu" secondAttribute="centerX" constant="9" id="Nhw-kr-Jon"/>
+                            <constraint firstItem="okr-hX-3cI" firstAttribute="top" secondItem="DZ0-yg-rSa" secondAttribute="bottom" id="g93-hi-peY"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OH2-tX-BPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="835" y="338"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.jpg" width="950" height="534"/>
+        <image name="2.jpg" width="640" height="1136"/>
+        <image name="3.jpg" width="1366" height="768"/>
+    </resources>
+</document>
