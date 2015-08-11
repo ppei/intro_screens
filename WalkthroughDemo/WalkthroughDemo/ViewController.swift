@@ -12,7 +12,7 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
 
     @IBAction func showWalkthBuPressed(sender: AnyObject) {
         
-        print("showWalkthBuPressed")
+        println("showWalkthBuPressed")
         
         // Get view controllers and build the walkthrough
         let stb = UIStoryboard(name: "Main", bundle: nil)
@@ -31,7 +31,7 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     }
     
     func walkthroughCloseButtonPressed(){
-        print("walkthroughCloseButtonPressed")
+        println("walkthroughCloseButtonPressed")
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     

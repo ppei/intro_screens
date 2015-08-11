@@ -9,6 +9,7 @@
 import UIKit
 
 @objc protocol signInViewControllerDelegate {
+    @objc optional func signInBackBuPressed()
 
 }
 
@@ -26,6 +27,12 @@ class signInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func signInBackButtonPressed(sender: UIBarButtonItem) {
+        
+        println("signInBackButtonPressed")
+        delegate?.signInBackBuPressed!()
+        
+    }
 
     /*
     // MARK: - Navigation

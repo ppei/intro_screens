@@ -56,7 +56,7 @@ At the moment it's only used to perform custom animations on didScroll.
 }
 
 
-@objc class BWWalkthroughViewController: UIViewController, UIScrollViewDelegate{
+@objc class BWWalkthroughViewController: UIViewController, UIScrollViewDelegate, signUpViewControllerDelegate, signInViewControllerDelegate{
     
     // MARK: - Public properties -
     
@@ -173,9 +173,38 @@ At the moment it's only used to perform custom animations on didScroll.
     // connect the button to this IBAction and implement the delegate with the skipWalkthrough
     @IBAction func close(sender: AnyObject){
         
-        print("close")
+        println("close")
         delegate?.walkthroughCloseButtonPressed?()
     }
+    
+    
+    @IBAction func signUpBuPressed() {
+        println("signUpBuPressed")
+        let stb = UIStoryboard(name: "Main", bundle: nil)
+        let signUp = stb.instantiateViewControllerWithIdentifier("signUp") as! signUpViewController
+        signUp.delegate = self as signUpViewControllerDelegate
+        self.presentViewController(signUp, animated: true, completion: nil)
+
+        
+    }
+    
+    @IBAction func signInBuPressed() {
+        println("signInBuPressed")
+        let stb = UIStoryboard(name: "Main", bundle: nil)
+        let signIn = stb.instantiateViewControllerWithIdentifier("signIn") as! signInViewController
+        signIn.delegate = self as signInViewControllerDelegate
+        self.presentViewController(signIn, animated: true, completion: nil)
+
+    }
+    
+    func signUpBackBuPressed() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func signInBackBuPressed() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     
     func pageControlDidTouch(){
 
