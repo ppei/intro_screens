@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA028CE71B7A4AD700CCB9C4 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA028CE61B7A4AD700CCB9C4 /* signUpViewController.swift */; };
+		FA028CE91B7A4AF700CCB9C4 /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA028CE81B7A4AF700CCB9C4 /* signInViewController.swift */; };
 		FA9FD7DB1B78ECC100651950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FD7DA1B78ECC100651950 /* AppDelegate.swift */; };
 		FA9FD7DD1B78ECC100651950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FD7DC1B78ECC100651950 /* ViewController.swift */; };
 		FA9FD7E01B78ECC100651950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9FD7DE1B78ECC100651950 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA028CE61B7A4AD700CCB9C4 /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		FA028CE81B7A4AF700CCB9C4 /* signInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInViewController.swift; sourceTree = "<group>"; };
 		FA9FD7D51B78ECC100651950 /* WalkthroughDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkthroughDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9FD7D91B78ECC100651950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9FD7DA1B78ECC100651950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				FA9FD7E11B78ECC100651950 /* Images.xcassets */,
 				FA9FD7E31B78ECC100651950 /* LaunchScreen.xib */,
 				FA9FD7D81B78ECC100651950 /* Supporting Files */,
+				FA028CE61B7A4AD700CCB9C4 /* signUpViewController.swift */,
+				FA028CE81B7A4AF700CCB9C4 /* signInViewController.swift */,
 			);
 			path = WalkthroughDemo;
 			sourceTree = "<group>";
@@ -238,9 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA028CE71B7A4AD700CCB9C4 /* signUpViewController.swift in Sources */,
 				FA9FD7FD1B79396A00651950 /* BWWalkthroughViewController.swift in Sources */,
 				FA9FD7FC1B79396A00651950 /* BWWalkthroughPageViewController.swift in Sources */,
 				FA9FD7DD1B78ECC100651950 /* ViewController.swift in Sources */,
+				FA028CE91B7A4AF700CCB9C4 /* signInViewController.swift in Sources */,
 				FA9FD7DB1B78ECC100651950 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

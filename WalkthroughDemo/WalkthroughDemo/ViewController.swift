@@ -30,6 +30,10 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
         self.presentViewController(walkthrough, animated: true, completion: nil)
     }
     
+    func walkthroughCloseButtonPressed(){
+        print("walkthroughCloseButtonPressed")
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

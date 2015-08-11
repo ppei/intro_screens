@@ -168,9 +168,12 @@ At the moment it's only used to perform custom animations on didScroll.
         }
     }
     
+    
     // TODO: If you want to implement a "skip" button
     // connect the button to this IBAction and implement the delegate with the skipWalkthrough
     @IBAction func close(sender: AnyObject){
+        
+        print("close")
         delegate?.walkthroughCloseButtonPressed?()
     }
     
